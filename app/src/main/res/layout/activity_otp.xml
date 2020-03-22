@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/otp_screen_image" />
+        app:srcCompat="@drawable/otp_screen_image"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/otp_title"
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Enter OTP"
+        android:text="@string/enter_otp"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -37,7 +38,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/open_sans_semibold"
-        android:text="We have sent you an OTP \n for phone number verification"
+        android:text="@string/we_have_sent_you_an_otp_n_for_phone_number_verification"
         android:textAlignment="center"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,13 +55,14 @@
         android:background="@drawable/text_input_bg"
         android:ems="10"
         android:fontFamily="@font/open_sans_semibold"
-        android:hint="Enter OTP"
+        android:hint="@string/enter_otp"
         android:inputType="phone"
         android:padding="16dp"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/otp_desc" />
+        app:layout_constraintTop_toBottomOf="@+id/otp_desc"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/verify_btn"

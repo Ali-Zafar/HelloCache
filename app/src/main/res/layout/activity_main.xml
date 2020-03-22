@@ -14,7 +14,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/profile_image" />
+        app:srcCompat="@drawable/profile_image"
+        android:contentDescription="@string/todo" />
 
     <TextView
         android:id="@+id/profile_title"
@@ -22,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Welcome User"
+        android:text="@string/welcome_user"
         android:textColor="@color/colorPrimary"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +39,7 @@
         android:layout_marginBottom="32dp"
         android:background="@drawable/primary_btn_bg"
         android:fontFamily="@font/open_sans_bold"
-        android:text="Logout"
+        android:text="@string/logout"
         android:textAllCaps="false"
         android:textColor="@android:color/background_light"
         android:textSize="16sp"
