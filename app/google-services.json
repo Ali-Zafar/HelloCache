@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "315762075009",
+    "firebase_url": "https://easycash-97c8a.firebaseio.com",
+    "project_id": "easycash-97c8a",
+    "storage_bucket": "easycash-97c8a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:315762075009:android:c631bc3e4168ec9b24b480",
+        "android_client_info": {
+          "package_name": "com.Potato.hellocash"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "315762075009-bv5702ca85p7q71pvsb2b3uaj82983lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXbeTsjGszMIAZNZvh7EQFMwkhSTkA1OA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "315762075009-bv5702ca85p7q71pvsb2b3uaj82983lj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

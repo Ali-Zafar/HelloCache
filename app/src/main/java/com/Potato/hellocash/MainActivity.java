@@ -1,4 +1,4 @@
-package com.Potato.hellocache;
+package com.Potato.hellocash;
 
 import androidx.appcompat.app.AppCompatActivity;
 

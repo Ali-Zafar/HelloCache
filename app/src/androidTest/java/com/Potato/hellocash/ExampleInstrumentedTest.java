@@ -1,4 +1,4 @@
-package com.Potato.hellocache;
+package com.Potato.hellocash;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.Potato.hellocache", appContext.getPackageName());
+        assertEquals("com.Potato.hellocash", appContext.getPackageName());
     }
 }
