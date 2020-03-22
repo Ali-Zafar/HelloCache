@@ -43,3 +43,4 @@ obj/
 /build
 /captures
 .externalNativeBuild
+.idea/vcs.xml
