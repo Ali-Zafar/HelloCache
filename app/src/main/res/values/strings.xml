@@ -2,7 +2,18 @@
     <string name="app_name">HelloCache</string>
     <string name="welcome_user">Welcome User</string>
     <string name="todo">TODO</string>
-    <string name="logout">Logout</string>
+    <string name="login">Log in</string>
     <string name="we_have_sent_you_an_otp_n_for_phone_number_verification">We have sent you an OTP \n for phone number verification</string>
     <string name="enter_otp">Enter OTP</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="welcome">Wellcome to EasyCash</string>
+    <string name="logout">Log out</string>
+    <string name="createAccount">CREATE MY ACCOUNT</string>
+    <string name="checkStatus">CURRENT STATUS</string>
+    <string name="send">SEND</string>
+    <string name="withdraw">WITHDRAW</string>
+    <string name="change">CHANGE</string>
+    <string name="Title">  HELLO   CASH</string>
+    <string name="logOut">LOG OUT</string>
+    <string name="textView">BALANCE AMOUNT :</string>
 </resources>

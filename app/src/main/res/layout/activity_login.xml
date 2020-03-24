@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".phonenumberauthentication.LoginActivity">
 
     <ImageView
         android:id="@+id/login_image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +20,7 @@
         android:id="@+id/login_title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/open_sans_bold"
         android:text="Verify Your Number"
         android:textColor="@color/colorPrimary"
@@ -34,7 +34,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:fontFamily="@font/open_sans_semibold"
         android:text="Please enter your Country Code \n and Phone number for verification"
@@ -42,14 +42,15 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_title" />
+        app:layout_constraintTop_toBottomOf="@+id/login_title"
+        android:gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/country_code_text"
         android:layout_width="64dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
         android:fontFamily="@font/open_sans_semibold"
@@ -58,14 +59,15 @@
         android:padding="16dp"
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_desc" />
+        app:layout_constraintTop_toBottomOf="@+id/login_desc"
+        android:layout_marginLeft="32dp" />
 
     <EditText
         android:id="@+id/phone_number_text"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/text_input_bg"
         android:ems="10"
@@ -76,14 +78,16 @@
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/country_code_text"
-        app:layout_constraintTop_toBottomOf="@+id/login_desc" />
+        app:layout_constraintTop_toBottomOf="@+id/login_desc"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="32dp" />
 
     <Button
         android:id="@+id/generate_btn"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/primary_btn_bg"
         android:fontFamily="@font/open_sans_semibold"
@@ -92,20 +96,9 @@
         android:textColor="@android:color/background_light"
         android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/phone_number_text" />
-
-    <TextView
-        android:id="@+id/tvac_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:fontFamily="@font/open_sans_bold"
-        android:text="TVAC Studio"
-        android:textColor="@color/colorPrimary"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/password_text" />
 
     <ProgressBar
         android:id="@+id/login_progress_bar"
@@ -116,13 +109,14 @@
         android:visibility="invisible"
         app:layout_constraintBottom_toBottomOf="@+id/generate_btn"
         app:layout_constraintEnd_toEndOf="@+id/generate_btn"
-        app:layout_constraintTop_toTopOf="@+id/generate_btn" />
+        app:layout_constraintTop_toTopOf="@+id/generate_btn"
+        android:layout_marginRight="16dp" />
 
     <TextView
         android:id="@+id/login_form_feedback"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="@font/open_sans_semibold"
         android:text="Working . . ."
         android:textColor="@android:color/holo_red_light"
@@ -130,5 +124,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/generate_btn" />
+
+    <EditText
+        android:id="@+id/password_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/text_input_bg"
+        android:ems="10"
+        android:hint="Your Password"
+        android:inputType="textPassword"
+        android:padding="16dp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/country_code_text" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
