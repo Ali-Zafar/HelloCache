@@ -75,7 +75,7 @@ public class AccountCreditMenuActivity extends AppCompatActivity {
                                 e.printStackTrace();
                             }
                             sendCredit(sentAmmount);
-                            Toast.makeText(AccountCreditMenuActivity.this, R.string.success,Toast.LENGTH_SHORT).show();
+//                            Toast.makeText(AccountCreditMenuActivity.this, R.string.success,Toast.LENGTH_SHORT).show();
 
                         }
                         else

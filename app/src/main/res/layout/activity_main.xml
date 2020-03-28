@@ -4,15 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Menu.MainActivity">
 
     <TextView
         android:id="@+id/Title"
-        android:layout_width="198dp"
-        android:layout_height="61dp"
+        android:layout_width="214dp"
+        android:layout_height="63dp"
         android:text="@string/Title"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="27sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

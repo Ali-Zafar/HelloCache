@@ -99,7 +99,6 @@ public class LoginActivity extends AppCompatActivity {
                                 mCallbacks
                         );
                     }else{
-                        mGenerateBtn.setText("log in");
                         verifyUser();
                     }
                 }

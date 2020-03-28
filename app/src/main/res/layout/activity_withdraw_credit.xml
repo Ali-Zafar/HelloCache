@@ -2,14 +2,15 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/sendTxt"
-        android:layout_width="160dp"
-        android:layout_height="38dp"
+        android:layout_width="185dp"
+        android:layout_height="55dp"
         android:text="@string/drawTxt"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +24,7 @@
         android:id="@+id/amount"
         android:layout_width="72dp"
         android:layout_height="26dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginTop="84dp"
         android:text="@string/amount"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
         app:layout_constraintEnd_toEndOf="parent"

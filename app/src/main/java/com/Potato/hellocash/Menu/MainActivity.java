@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
         final String result =  Long.toString(((GlobalVariables) getApplicationContext()).currentUser.getCredit());
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
-        builder.setTitle("Scan Result");
+        builder.setTitle("Current Balance:");
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
