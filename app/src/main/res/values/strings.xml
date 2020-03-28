@@ -16,4 +16,15 @@
     <string name="Title">  HELLO   CASH</string>
     <string name="logOut">LOG OUT</string>
     <string name="textView">BALANCE AMOUNT :</string>
+    <string name="sendTxt">SEND MONEY! </string>
+    <string name="send_to">Send To:</string>
+    <string name="sendBtn">SEND! </string>
+    <string name="enter_the_recipient_s_number">Enter the recipient\'s number</string>
+    <string name="enter_the_amount">Enter the amount</string>
+    <string name="send_btn">SEND!</string>
+    <string name="faliure">Please fill the empty slot</string>
+    <string name="success">Sent Successfully</string>
+    <string name="amount">Amount: </string>
+    <string name="withdraw_btn">Withdraw</string>
+    <string name="drawTxt">Withdraw Money!</string>
 </resources>

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Menu.MainActivity">
+    tools:context=".Menu.AccountCreditMenuActivity">
 
     <TextView
         android:id="@+id/Title"
@@ -15,44 +15,55 @@
         android:textSize="27sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.065" />
+        app:layout_constraintVertical_bias="0.116" />
 
     <Button
-        android:id="@+id/currentStatus"
+        android:id="@+id/send"
         android:layout_width="248dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="156dp"
-        android:text="@string/checkStatus"
+        android:layout_height="50dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/send"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Title" />
 
     <Button
-        android:id="@+id/readQr"
-        android:layout_width="245dp"
-        android:layout_height="55dp"
+        android:id="@+id/withDraw"
+        android:layout_width="248dp"
+        android:layout_height="50dp"
         android:layout_marginTop="28dp"
-        android:text="@string/send"
-        app:layout_constraintEnd_toEndOf="@+id/currentStatus"
+        android:text="@string/withdraw"
+        app:layout_constraintEnd_toEndOf="@+id/send"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/currentStatus"
-        app:layout_constraintTop_toBottomOf="@+id/currentStatus" />
+        app:layout_constraintStart_toStartOf="@+id/send"
+        app:layout_constraintTop_toBottomOf="@+id/send" />
+
+    <Button
+        android:id="@+id/change"
+        android:layout_width="243dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/change"
+        app:layout_constraintEnd_toEndOf="@+id/withDraw"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/withDraw"
+        app:layout_constraintTop_toBottomOf="@+id/withDraw" />
 
     <Button
         android:id="@+id/logOut"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginBottom="50dp"
+        android:layout_marginTop="96dp"
         android:text="@string/logOut"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/readQr" />
+        app:layout_constraintTop_toBottomOf="@+id/change"
+        app:layout_constraintVertical_bias="0.052" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,7 +5,7 @@ public class AccountInformation {
     String phoneNumber;
     String password;
     boolean isPaired;
-    int credit;
+    Long credit;
 
     public String getPhoneNumber() {
         return phoneNumber;
@@ -31,11 +31,11 @@ public class AccountInformation {
         isPaired = paired;
     }
 
-    public int getCredit() {
+    public Long getCredit() {
         return credit;
     }
 
-    public void setCredit(int credit) {
+    public void setCredit(Long credit) {
         this.credit = credit;
     }
 }

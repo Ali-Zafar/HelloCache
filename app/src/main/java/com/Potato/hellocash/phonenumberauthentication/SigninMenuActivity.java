@@ -8,7 +8,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.Potato.hellocash.R;
-public class EntryMenuActivity extends AppCompatActivity {
+import com.Potato.hellocash.phonenumberauthentication.LoginActivity;
+
+public class SigninMenuActivity extends AppCompatActivity {
 
     private Button mLogin;
     private Button mSignup;
@@ -44,7 +46,7 @@ public class EntryMenuActivity extends AppCompatActivity {
 //            sendUserToLogin();
 //        }
     }
-
+    
     private void sendUserToSignup() {
         Intent intent = new Intent(this, LoginActivity.class);
         intent.putExtra("signup",true);

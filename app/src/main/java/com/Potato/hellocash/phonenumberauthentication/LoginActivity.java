@@ -4,14 +4,14 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import com.Potato.hellocash.GlobalVariables;
+import com.Potato.hellocash.Menu.MainActivity;
 import com.Potato.hellocash.R;
 import com.Potato.hellocash.databaseobjects.AccountInformation;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -99,6 +99,7 @@ public class LoginActivity extends AppCompatActivity {
                                 mCallbacks
                         );
                     }else{
+                        mGenerateBtn.setText("log in");
                         verifyUser();
                     }
                 }
@@ -169,7 +170,7 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void sendUserToHome() {
-        Intent homeIntent = new Intent(LoginActivity.this, MainActivity.class);
+        Intent homeIntent = new Intent(this, MainActivity.class);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
         homeIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
         startActivity(homeIntent);
@@ -177,14 +178,14 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void addUserToDataBase(){
-        AccountInformation newAccount = new AccountInformation();
-        newAccount.setCredit(0);
+        AccountInformation newAccount = ((GlobalVariables) getApplicationContext()).currentUser;
+        newAccount.setCredit(0l);
         newAccount.setPaired(false);
         newAccount.setPhoneNumber(complete_phone_number);
         newAccount.setPassword(password);
         mDBref = FirebaseDatabase.getInstance().getReference().child("AccountInformation");
 
-        mDBref.push().setValue(newAccount);
+        mDBref.child(complete_phone_number).setValue(newAccount);
     }
 
     private void verifyUser(){
@@ -204,6 +205,9 @@ public class LoginActivity extends AppCompatActivity {
                         mLoginFeedbackText.setVisibility(View.VISIBLE);
                     }
                     else{
+                        final GlobalVariables var = (GlobalVariables) getApplicationContext();
+                        var.currentUser.setPhoneNumber((String)postSnapshot.child("phoneNumber").getValue());
+                        var.currentUser.setCredit((Long)postSnapshot.child("credit").getValue());
                         sendUserToHome();
                     }
                 }
